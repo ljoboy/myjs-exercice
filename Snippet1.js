@@ -13,3 +13,9 @@ class Receipt {
         console.log(`total receipt £${total}`);
     }
 }
+
+const pizza = 6.00;
+const beer = 5.00;
+const calc = new Calculator();
+const receipt = new Receipt(calc);
+receipt.print(pizza, beer);
