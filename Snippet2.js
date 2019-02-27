@@ -8,3 +8,9 @@ class Calculator{
         }
     }
 }
+
+class Receipt{
+    constructor(observable$){
+        observable$.subscribe(value => console.log(`total receipt : £${value}`))
+    }
+}
