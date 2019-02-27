@@ -14,3 +14,9 @@ class Receipt{
         observable$.subscribe(value => console.log(`total receipt : £${value}`))
     }
 }
+
+const pizza = 6.0;
+const beer = 5.00;
+
+const calc = new Calculator(pizza);
+const receipt = new Receipt(calc.observable);
