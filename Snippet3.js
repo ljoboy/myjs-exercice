@@ -23,3 +23,12 @@ class Receipt {
         console.log(`total receipt £${total.toFixed(2)}`);
     }
 }
+
+const JEANS = 80.00;
+const SHIRT = 35.00;
+const SHOES = 90.00;
+const COAT = 140.00;
+const HAT = 29.00;
+const calc = new Calculator();
+const receipt = new Receipt(calc);
+receipt.print(JEANS, SHIRT, SHOES, COAT, HAT); //"total receipt £456.28"
