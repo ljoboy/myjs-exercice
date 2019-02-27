@@ -1,3 +1,4 @@
+// Reactive Paradigm
 class Calculator{
     constructor(a, b){
         const obs = Rx.Observable.of(a,b);
