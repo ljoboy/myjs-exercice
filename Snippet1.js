@@ -1,3 +1,4 @@
+// Injection de dependance
 class Calculator {
     sum(a, b) {
         return a + b;
@@ -14,8 +15,7 @@ class Receipt {
     }
 }
 
-const pizza = 6.00;
-const beer = 5.00;
-const calc = new Calculator();
-const receipt = new Receipt(calc);
+const pizza = 15.00;
+const beer = 7.00;
+const receipt = new Receipt(new Calculator());
 receipt.print(pizza, beer);
