@@ -13,3 +13,13 @@ class Calculator {
         return total;
     }
 }
+
+class Receipt {
+    constructor(calculator) {
+        this.calc = calculator;
+    }
+    print(...items) {
+        let total = this.calc.sum(...items);
+        console.log(`total receipt £${total.toFixed(2)}`);
+    }
+}
